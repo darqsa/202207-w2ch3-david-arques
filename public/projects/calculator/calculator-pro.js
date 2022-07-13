@@ -23,13 +23,12 @@ function calculatorPro() {
     resultRest = numList[0] - numList[1];
     resultMult = numList[0] * numList[1];
     resultDiv = numList[0] / numList[1];
-    results = [resultSum, resultRest, resultMult, resultDiv];
   }
 
   results = [resultSum, resultRest, resultMult, resultDiv];
 
   if (numList.length === 1) {
-    resultSqrt = Math.sqrt(numList[0]);
+    resultSqrt = Math.sqrt(parseFloat(numList[0]));
     results = [resultSqrt];
   }
 
