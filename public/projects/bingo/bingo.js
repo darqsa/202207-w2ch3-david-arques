@@ -91,8 +91,8 @@ function bingo() {
     { name: "Jugador 4", punctuation: 11 },
     { name: "Jugador 5", punctuation: 0 },
   ];
+  let points;
   function ranking() {
-    let points;
     ranks.push({
       name: user,
       punctuation: points,
@@ -103,7 +103,7 @@ function bingo() {
     console.table(ranks);
   }
 
-  let points = 75;
+  points = 75;
   let askTurn;
   let firstLineCount = 0;
   let secondLineCount = 0;
