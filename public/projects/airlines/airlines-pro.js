@@ -74,7 +74,8 @@ if (permisos === "USER") {
   const vueloComprado = [];
   let idUsuario;
 
-  for (let i = 0; i < vuelos.length; i++) {
+  for (let i of vuelos) {
+    i += 1;
     if (vuelos[i].coste <= precio) {
       vuelosUsuario.push(vuelos[i]);
     }
@@ -85,14 +86,16 @@ if (permisos === "USER") {
     console.log(
       "Estos son los vuelos disponibles por el precio introducido o menos: "
     );
-    for (let i = 0; i < vuelosUsuario.length; i++) {
+    for (let i of vuelosUsuario) {
+      i += 1;
       console.log(
         `Origen: ${vuelosUsuario[i].de}, Destino: ${vuelosUsuario[i].hacia}, Precio: ${vuelosUsuario[i].coste}€, Id: ${vuelosUsuario[i].id}`
       );
     }
 
     idUsuario = parseFloat(prompt("Dime el ID del vuelo que deseas comprar"));
-    for (let i = 0; i < vuelosUsuario.length; i++) {
+    for (let i of vuelosUsuario) {
+      i += 1;
       if (idUsuario === vuelosUsuario[i].id) {
         vueloComprado.push(vuelosUsuario[i]);
       }
@@ -133,7 +136,8 @@ if (permisos === "USER") {
       }
       eliminacion = confirm("Quieres eliminar un vuelo?");
       if (eliminacion) {
-        for (let i = 0; i < vuelos.length; i++) {
+        for (let i of vuelos) {
+          i += 1;
           console.log(
             `ID: ${vuelos[i].id}, origen: ${vuelos[i].de}, destino: ${vuelos[i].hacia}, coste: ${vuelos[i].coste}€, escala: ${vuelos[i].escala}`
           );
@@ -144,7 +148,8 @@ if (permisos === "USER") {
         const vuelosSinEliminado = vuelos.filter((x) => x.id !== idEliminado);
         vuelos = vuelosSinEliminado;
         console.log("");
-        for (let i = 0; i < vuelosSinEliminado.length; i++) {
+        for (let i of vuelosSinEliminado) {
+          i += 1;
           console.log(
             `ID: ${vuelosSinEliminado[i].id}, origen: ${vuelosSinEliminado[i].de}, destino: ${vuelosSinEliminado[i].hacia}, coste: ${vuelosSinEliminado[i].coste}€, escala: ${vuelosSinEliminado[i].escala}`
           );
