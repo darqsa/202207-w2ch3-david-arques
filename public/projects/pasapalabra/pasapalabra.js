@@ -357,7 +357,8 @@ function pasapalabra() {
 
   let questionSelector;
   let randomQuestions = [];
-  for (let i = 0; i < questions.length; i++) {
+  for (let i of questions) {
+    i += 1;
     const randomNum = Math.floor(Math.random() * 10);
 
     if (randomNum <= 4) {
@@ -409,7 +410,7 @@ function pasapalabra() {
             notAnswered.push(randomQuestions[i]);
             break;
           case "END":
-            i = 27;
+            i += 27;
             console.log(
               `Juego terminado, has acertado un total de ${points} preguntas`
             );
