@@ -1,0 +1,48 @@
+
+button{
+    font-size: xx-large;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(184, 184, 184);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.double{
+    width: 200px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.right{
+    background-color: orange;
+    color: white;
+}
+
+.results{
+    background-color: rgb(61, 58, 70);
+    color: white;
+    text-align: right;
+    font-size: xx-large;
+    width: 400px;
+    height: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(184, 184, 184);
+
+}
+div{
+    display: flex;
+
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+
+}
+
+
