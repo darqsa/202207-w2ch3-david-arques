@@ -13,5 +13,6 @@ module.exports = {
     "no-restricted-syntax": "off",
     "no-console": "off",
     "no-alert": "off",
+    "no-restricted-globals": "off",
   },
 };
